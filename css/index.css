@@ -1,0 +1,227 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fuentePrincipal:"Google Sans Code", monospace;
+    --fuenteParrafos: 'Courier New', Courier, monospace;
+    --primario: #7e30007b;
+    --secundario: #ffffffff;
+    --negro: #000000;
+}
+
+
+
+body{
+    font-family: var(--fuenteParrafos);
+}
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+ 
+}
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuentePrincipal);
+}
+
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1rem;
+}
+h4{
+    font-size:14px;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 10px;
+
+}
+
+
+
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.header__texto{
+    text-align: center;
+    color: var(--secundario);
+    margin-top: 5rem;
+}
+@media (min-width: 768px) {
+ .header__texto{
+    margin-top: 10rem;
+   
+ }
+}
+@media (min-width: 768px) {
+ .barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+ }
+}
+
+.logo{
+color: var(--secundario);
+}
+
+.logo__nombre{
+font-weight:200;
+text-align: center;
+}
+.logo__bold{
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+ .navegacion{
+    display: flex;
+    gap: 1rem;
+ }
+}
+.navegacion{
+    margin-top: 2rem;
+}
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--secundario);
+}
+
+
+
+@media (min-width: 768px) {
+ .contenido-principal{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 2fr  1fr;
+    column-gap: 4rem;
+      
+
+ }
+
+}
+
+.entrada{
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    margin-top: 40px;
+}
+
+.entrada:last-of-type{
+    border:none;
+    margin:0;
+}
+
+
+.boton{
+display: block;
+font-family:var(--fuentePrincipal);
+color: var(--secundario);
+text-align: center;
+padding: 1rem 3rem;
+font-size: 1rem;
+text-transform:uppercase;
+font-weight: 700;
+margin-bottom: 2rem;
+border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+ .boton{
+    display: inline-block;
+ }
+}
+.boton--primario{
+    background-color: var(--negro);
+}
+.boton--secundario{
+    background-color: var(--primario);
+    border-radius: 10px;
+}
+
+.cursos{
+    list-style: none;
+    padding: 0;
+
+}
+
+.widget-curso{
+    display: flex;
+    flex-direction: column;
+margin-top: 40px;
+border-bottom: 1px solid var(--negro);
+margin-bottom: 2rem;
+gap: 14px;
+
+}
+
+.widget-curso:last-of-type{
+border: none;
+margin-bottom:0;
+
+}
+.widget-curso_label{
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+.widget-curso_info{
+    font-weight: normal;
+}
+.widget-curso_label,
+.widget-curso_info{
+    font-size: 1.2rem;
+}
+
+.footer{
+    background-color: var(--negro);
+    padding: 4rem 0;
+    
+}
+
+.blog{
+    margin-top: 10px;
+}
+.sidebar{
+        margin-top: 10px;
+}
+
+
+/*CSS SOBRE NOSOTROS*/
+
+@media (min-width: 768px) {
+     .dividir{
+    width: 70%;
+    padding: 40px;
+ }
+ .sobre-nodotros{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 2rem;
+
+}
+}
+.centrar-texto{
+    font-size: 40px;    
+}
